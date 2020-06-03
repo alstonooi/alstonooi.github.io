@@ -8,7 +8,9 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/contact-buttons.css">
+</head>
 
+<body>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/jquery.contact-buttons.js"></script>
@@ -53,29 +55,25 @@
     });
 });
   </script>
-
-</head>
-
-<body>
-<script>
-  $.contactButtons({
-  effect  : 'slide-on-scroll',
-  buttons : {
-    'linkedin': { class: 'linkedin', use: true, 
-                  link: 'https://www.linkedin.com/in/alstonooi/', icon: 'linkedin',
-                  title: '@Alstonooi Linkedin', extras: 'target="_blank"' },
-    'git':      { class: 'git', use: true, 
-                  link: 'https://github.com/alstonooi', icon: 'github',
-                  title: '@Alstonooi Github', extras: 'target="_blank"' },
-    'phone':    { class: 'phone separated', use: true, icon: 'phone',
-                  title: '@Alstonooi Contact', type: 'phone'},
-    'email':    { class: 'email', use: true, icon: 'envelope',
-                  title: '@Alstonooi Email',
-                  link: 'https://mail.google.com/mail/?view=cm&fs=1&to=alston12345@gmail.com',
-                  extras: 'target="_blank"' }
-  }
-});
-</script>
+  <script>
+    $.contactButtons({
+    effect  : 'slide-on-scroll',
+    buttons : {
+      'linkedin': { class: 'linkedin', use: true, 
+                    link: 'https://www.linkedin.com/in/alstonooi/', icon: 'linkedin',
+                    title: '@Alstonooi Linkedin', extras: 'target="_blank"' },
+      'git':      { class: 'git', use: true, 
+                    link: 'https://github.com/alstonooi', icon: 'github',
+                    title: '@Alstonooi Github', extras: 'target="_blank"' },
+      'phone':    { class: 'phone separated', use: true, icon: 'phone',
+                    title: '@Alstonooi Contact', type: 'phone'},
+      'email':    { class: 'email', use: true, icon: 'envelope',
+                    title: '@Alstonooi Email',
+                    link: 'https://mail.google.com/mail/?view=cm&fs=1&to=alston12345@gmail.com',
+                    extras: 'target="_blank"' }
+      }
+    });
+  </script>
 <nav class="navbar navbar-expand-md bg-dark fixed-top">
   <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
     <span class="navbar-toggler-icon"></span>
