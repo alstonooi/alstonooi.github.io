@@ -1,21 +1,308 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-<link href = "/style.css" rel = "stylesheet">
+  <title>Alston Ooi Resume Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/contact-buttons.css">
+
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jquery.contact-buttons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+  <script> 
+    function majors() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    function flip(event){
+      var element = event.currentTarget;
+      if (element.className === "card") {
+        if(element.style.transform == "rotateY(180deg)") {
+          element.style.transform = "rotateY(0deg)";
+        }
+        else {
+          element.style.transform = "rotateY(180deg)";
+        }
+      }
+    };
+    $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+  </script>
+
 </head>
+
 <body>
-<div class="main" id="section1">
-  <h2>Section 1</h2>
+<script>
+  $.contactButtons({
+  effect  : 'slide-on-scroll',
+  buttons : {
+    'linkedin': { class: 'linkedin', use: true, 
+                  link: 'https://www.linkedin.com/in/alstonooi/', icon: 'linkedin',
+                  title: '@Alstonooi Linkedin', extras: 'target="_blank"' },
+    'git':      { class: 'git', use: true, 
+                  link: 'https://github.com/alstonooi', icon: 'github',
+                  title: '@Alstonooi Github', extras: 'target="_blank"' },
+    'phone':    { class: 'phone separated', use: true, icon: 'phone',
+                  title: '@Alstonooi Contact', type: 'phone'},
+    'email':    { class: 'email', use: true, icon: 'envelope',
+                  title: '@Alstonooi Email',
+                  link: 'https://mail.google.com/mail/?view=cm&fs=1&to=alston12345@gmail.com',
+                  extras: 'target="_blank"' }
+  }
+});
+</script>
+<nav class="navbar navbar-expand-md bg-dark fixed-top">
+  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="main-navigation">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#top">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Work_Experience">Work Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Computer_Skills">Computer Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Awards_Certificates">Awards & Certificates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://docs.google.com/document/d/1n4ZmKYUb-9T-xq_U0cC4gauC8pclG9H39z5xznmr3Sk/edit?usp=sharing">PDF</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+<div class="section" id="About">
+  <div class="container-fluid no-padding content_about">
+    <div class="row justify-content-md-center">
+      <div class="col-3">
+        <img src="MIMSA_board17-2.jpg" alt="Profile_pic" class="p_pic img-responsive img-thumbnail rounded-circle">
+        <br> <br>
+        <h2>Alston Ooi</h2>
+      </div>
+    </div>
+    <div class="row intro-box">
+      <div class="col-7 text-justify">
+        <p>Hello everyone, I am Ooi Jin Fu, but you can call me <strong>Alston</strong>. I am a recent graduate from University of Michigan, Ann Arbor, United States (<strong><span class="mich">"Go Blue!"</span></strong>). As a Bachelor of Science degree holder with <span class="popup" onclick="majors()"><u>three majors</u>
+  <span class="popuptext" id="myPopup">Actuarial Science <br> Data Science <br> Statistics</span>
+</span>, I am currently seeking job opportunities that are related to data analytics/risk assessment. As a data-driven person, I believe data always reveal the untold story and I am excited to tell that story to you! I am also constantly looking for interesting and cool data science/web app side projects, so hit me up if you need someone to work with!</p>
+      </div>
+      <div class="col-3 container">
+        <div class="card" onclick="flip(event)">
+          <div class="front">
+            <img src="card_front.png" alt="card_front" class="img-responsive">
+          </div>
+          <div class="back">
+            <img src="card_back.png" alt="card_back" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>  
+</div>
+
+<div class="section" id="Work_Experience">
+  <div class="container-fluid no-padding content_work">
+    <div class="row justify-content-md-center">
+      <div class="col-3">
+        <img src="work.png" alt="alt_pic" class="icon img-responsive img-thumbnail rounded-circle">
+      </div>
+    </div>
+    <div class="row content-box">
+      <div class="col-10 mx-auto content_text_work">
+        <br>
+        <ul>
+          <li> <strong>Student Instructional Technology Consultant (Liaison)</strong></li>
+          <span class="duration">May 2017 – May 2020 &#8231; 3 years 1 month</span>
+            <dd>- Assist professors with Math courses online webwork and 3D printing using <strong> Matlab </strong> and <strong> ReplicatorG.</strong></dd>
+            <dd>- Monitor performances by other co-workers and submit weekly evaluation reports to professor.</dd>
+          <li><strong>Mathematics Gateway Exam Proctor</strong></li>
+          <span class="duration">Sep 2017 – Apr 2020 &#8231; 2 years 8 months</span>
+            <dd>- Monitor and administer standardized calculation tests for multiple math courses.</dd>
+            <dd>- Tutor and provide solution interpretation regarding the test for students.</dd>
+          <li><strong>Mathematics Learning Center Manager</strong></li>
+          <span class="duration">Sep 2017 – Apr 2018 &#8231; 8 months</span>
+            <dd>- Respond to telephone and in-person requests for information.</dd>
+            <dd>- Ensure tutors and students undergo tutoring sessions effectively.</dd>
+        </ul>
+      </div>
+    </div>
+  </div>  
+</div>
+
+<div class="section" id="Computer_Skills">
+  <div class="container-fluid no-padding content_skills">
+    <div class="row justify-content-md-center">
+      <div class="col-3">
+        <img src="skill.png" alt="alt_pic" class="icon img-responsive img-thumbnail rounded-circle">
+      </div>    
+    </div>
+    <div class="row content-box">
+      <div class="col-10 mx-auto content_text_skills">
+        <div class="container">
+          <br>
+          <p class="text-center languages"><strong>Programming Languages</strong></p>
+            <section class="customer-logos slider">
+              <div class="slide"><img src="/logos/cplusplus.jpg"></div>
+              <div class="slide"><img src="/logos/html.jpg"></div>
+              <div class="slide"><img src="/logos/css.png"></div>
+              <div class="slide"><img src="/logos/bootstrap.png"></div>
+              <div class="slide"><img src="/logos/R.png"></div>
+              <div class="slide"><img src="/logos/java.png"></div>
+              <div class="slide"><img src="/logos/javascript.png"></div>
+              <div class="slide"><img src="/logos/python.png"></div>
+              <div class="slide"><img src="/logos/latex.png"></div>
+            </section>
+            <br> <br>
+            <p class="text-center languages"><strong>Computer Softwares</strong></p>
+            <section class="customer-logos slider">
+              <div class="slide"><img src="/logos/rstudio.png"></div>
+              <div class="slide"><img src="/logos/stata.jpg"></div>
+              <div class="slide"><img src="/logos/excel.png"></div>
+              <div class="slide"><img src="/logos/word.png"></div>
+              <div class="slide"><img src="/logos/PowerPoint.png"></div>
+              <div class="slide"><img src="/logos/flstudio.png"></div>
+              <div class="slide"><img src="/logos/ableton.jpg"></div>
+              <div class="slide"><img src="/logos/logic.jfif"></div>
+              <div class="slide"><img src="/logos/audacity.png"></div>
+            </section>
+        </div>
+      </div>
+    </div>
+
+  </div>  
+</div>
+
+<div class="section" id="Awards_Certificates">
+  <div class="container-fluid no-padding content_awards">
+    <div class="row justify-content-md-center">
+      <div class="col-3">
+        <img src="award.png" alt="alt_pic" class="icon img-responsive img-thumbnail rounded-circle">
+      </div>    
+    </div>
+    <div class="row content-box">
+      <div class="col-10 mx-auto content_text_work">
+        <br>
+        <ul>
+          <li> <strong>Petroliam Nasional Berhad (Petronas) Scholarship Awards</strong></li>
+          <span class="duration">Awarded: Jun 2015</span>
+            <dd>Full tuition scholarship awarded to pursue undergraduate studies at selected top universities</dd>
+            <dd>Eligibility requirements are outstanding performances in academics and extracurricular activities.</dd>
+            <dd>Selection process included group and individual interviews, Cambridge English Language  Online Assessment and personality assessment.</dd>
+          <li><strong>MIDAS Basketball Data Madness Challenge 2020 - Final Four </strong></li>
+          <span class="duration">Awarded: Apr 2020</span>
+            <dd>Monetary prizes awarded to top four finalists with recognition by <strong>Stephen M. Ross School of Business</strong></dd>
+            <dd>Built tree-based models(Python) using gradient boosting technique to predict University of Michigan basketball team players’ dynamics based on their training performance.</dd>
+            <dd>Designed a detailed and well-communicated portfolio at any level of expertise based on team findings.</dd>
+            <dd>Check out our portfolio <a href="/march_madness.pdf" target="_blank"> here </a></dd>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-10 mx-auto content_text_soa">
+        <br>
+        <p class="text-center languages"><strong>SOA Actuarial Exam</strong>
+        <ul>
+          <li>Financial Mathematics</li>
+          <li>Probability </li>
+          <li>Statistics for Risk Modeling</li>
+          <li>Short-term Actuarial Mathematics</li>
+          <li>VEE: Validation by Educational Experience</li>
+            <dd>- Economics</dd>
+            <dd>- Corporate Finance</dd>
+            <dd>- Applied Statistics</dd>        
+        </ul>
+      </div>
+    </div>
+  </div>  
+</div>
+
+<div class="section" id="Projects">
+  <div class="container-fluid no-padding content_projects">
+    <div class="row justify-content-md-center">
+      <div class="col-3">
+        <img src="project.png" alt="alt_pic" class="icon img-responsive img-thumbnail rounded-circle">
+      </div>    
+    </div>
+    <div class="row content-box">
+      <div class="col-10 mx-auto content_text">
+        <br>
+        <ul>
+          <li> <strong>Piazza Post Classification</strong></li>
+            <dd>Built Naive Bayes Classifier in C++ to classify 2988 posts accurately to respective labels.</dd>
+            <dd>Implemented Map using Binary Search Tree to enhance computational time complexity.</dd>
+          <li><strong>Wikipedia Search Engine</strong></li>
+            <dd>Utilized Hadoop to implement MapReduce based indexer.</dd>
+            <dd>Implemented information retrieval system using tf-idf and PageRank scores.</dd>
+          <li><strong>Mobile Phone Features that Affect its Pricing</strong></li>
+            <dd>Analyzed data of 2000 entries using R to investigate the research questions.</dd>
+        </ul>
+      </div>
+    </div>
+  </div>  
+</div>
+
+<!-- <div class="section" id="Education">
+  <a href="#Education">Education</a>
+</div>
+
+<div class="section" id="Computer_Skills">
   <p>Click on the link to see the "smooth" scrolling effect.</p>
-  <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+  <a href="#Computer_Skills">Click Me to Smooth Scroll to Section 3 Below</a>
   <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
 </div>
 
-<div class="main" id="section2">
-  <h2>Section 2</h2>
-  <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+<div class="section" id="Work_Experience">
+  <p>Click on the link to see the "smooth" scrolling effect.</p>
+  <a href="#Work_Experience">Click Me to Smooth Scroll to Section 4 Below</a>
+  <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
 </div>
+<div class="section" id="Awards_Certificates">
+  <p>Click on the link to see the "smooth" scrolling effect.</p>
+  <a href="#Awards_Certificates">Click Me to Smooth Scroll to Section 5 Below</a>
+  <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+</div>
+
+<div class="section" id="Projects">
+  <p>Click on the link to see the "smooth" scrolling effect.</p>
+  <a href="#Projects">Click Me to Smooth Scroll to Section 6 Below</a>
+  <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+</div> -->
+
+
 
 </body>
 </html>
