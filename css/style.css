@@ -5,6 +5,7 @@ html {
 
 body {
   background: #28384f;
+  height: 100%
 }
 
 .img-responsive { 
@@ -165,7 +166,6 @@ body {
 
 .content_text_work{
   background: #d8d8d8;
-  height: 400px;
   position: relative;
   border: 2px solid #FFFFFF;
   border-radius: 15px;
@@ -185,7 +185,6 @@ body {
 
 .content_text_skills{
   background: #d8d8d8;
-  height: 450px;
   position: relative;
   border: 2px solid #FFFFFF;
   border-radius: 15px;
@@ -205,7 +204,6 @@ body {
 
 .content_text_soa{
   background: #d8d8d8;
-  height: 300px;
   position: relative;
   border: 2px solid #FFFFFF;
   border-radius: 15px;
@@ -219,7 +217,6 @@ body {
 /*--- project ---*/
 .content_text{
   background: #d8d8d8;
-  height: 300px;
   position: relative;
   border: 2px solid #FFFFFF;
   border-radius: 15px;
