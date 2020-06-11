@@ -176,7 +176,15 @@ body {
 .headpic{
   z-index: 2;
   position: absolute;
-  top:15%;
+  padding-top:1%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.headpicc{
+  z-index: 2;
+  position: absolute;
+  padding-top:2%;
   width: 100%;
   margin: 0 auto;
 }
@@ -384,8 +392,7 @@ body {
     display: none;
 }
 
-@media only screen and (max-width: 1000px){
-
+@media only screen and (max-width: 1000px) and (min-width: 600px){
 .p_pic{
   max-width: 30%;
 }
@@ -407,8 +414,53 @@ body {
 }
 
 .icon{
-  max-width: 30%;
+  max-width: 20%;
   text-align: center;
+}
+
+.headpic{
+  padding-top: 10%;
+}
+
+.headpicc{
+  padding-top:10%;
+}
 
 }
+
+@media only screen and (max-width: 600px) and (min-width: 0px){
+.p_pic{
+  max-width: 30%;
+}
+
+.intro-box{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 0%;
+}
+
+.scene{
+  padding-bottom: 10%;
+}
+
+.bodypad{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 15%;
+}
+
+.icon{
+  max-width: 20%;
+  text-align: center;
+}
+
+.headpic{
+  padding-top: 10%;
+}
+
+.headpicc{
+  padding-top:15%;
+}
+
+
 }
