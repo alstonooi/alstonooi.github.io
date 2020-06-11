@@ -135,8 +135,6 @@ body {
   transform: rotateY(180deg);
 }*/
 
-body { font-family: sans-serif; }
-
 .scene {
   width: 200px;
   height: 260px;
