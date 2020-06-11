@@ -113,3 +113,6 @@
   });
   
  }( jQuery ));
+
+$(this).parent().css('position', 'relative');
+$(this).parent().css('z-index', 3000);

@@ -5,7 +5,8 @@ html {
 
 body {
   background: #28384f;
-  height: 100%
+  height: 100%;
+  width: 100%;
 }
 
 .img-responsive { 
@@ -14,6 +15,8 @@ body {
 
 .section{
   padding-top: 80px;
+  height: 100%;
+  width:100%;
 }
 
 /*--- navigation bar ---*/
@@ -36,42 +39,52 @@ body {
 }
 
 /*--- about ---*/
-.content_about {
-  text-align:center;
-  background:repeat-x center,
-  linear-gradient(to top, transparent 85%, #28384f 85%),
-  linear-gradient(to bottom,transparent 15%, #7a8696 15%);
-  height: 550px;
-}
-
-.p_pic {
-  max-width: 60%;
+.content_text_intro{
+  background: #d8d8d8;
+  position: relative;
+  border: 2px solid #FFFFFF;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .intro-box{
-  margin-left: 10%;
-  margin-top: 5%;
+  padding-left: 10%;
+  padding-top: 25%;
+  padding-bottom: 10%;
 }
 
-.container {
-  perspective: 1000px;
+.card-box{
+  padding-top:7%;
 }
 
 .mich{
   color:#1313FE ;
 }
+
+.scene {
+  perspective: 1000px;
+  padding-left: 20%;
+/*  top: -120px;*/
+}
+
 .card {
   transition: transform 1s;
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
-  width:90%;
-  height:auto;
-  top:-120px;
+  width: 80%;
+  height: auto;
 }
 
-.front, .back {
-  position: absolute;
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,9 +92,13 @@ body {
   backface-visibility: hidden;
 }
 
-
-.back {
+.card__face--back {
+  position: absolute;
   transform: rotateY(180deg);
+}
+
+.cardpic{
+  max-width:100%;
 }
 
 .popup {
@@ -138,31 +155,45 @@ body {
 }
 
 /*--- share ---*/
-.icon {
-  vertical-align:top;
-  position:relative;
-  max-width: 40%;
-  height: auto;
-}
-
 .duration{
   color:#787777;
   font-size: 14px;
 }
 
-/*.content-box{
-  padding-top:40px;
+.header{
+  position: relative;
+  background-color: #28384f;
+  height: 15vh;
+}
+.bodyy{
+  background-color:  #7a8696;
+}
+
+.content{
+  text-align: center;
+}
+
+.headpic{
+  z-index: 2;
+  position: absolute;
+  top:15%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bodypad{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+/*.iconpic{
+  z-index: 2;
+  position: absolute;
+  top:15%;
+  width: 100%;
 }
 */
 /*--- work ---*/
-.content_work {
-  text-align:center;
-  background:repeat-x center,
-  linear-gradient(to top, transparent 85%, #28384f 85%),
-  linear-gradient(to bottom,transparent 15%, #7a8696 15%);
-  height:600px;
-  padding-top:30px;
-}
+
 
 .content_text_work{
   background: #d8d8d8;
@@ -179,7 +210,7 @@ body {
   background:repeat-x center,
   linear-gradient(to top, transparent 85%, #28384f 85%),
   linear-gradient(to bottom,transparent 15%, #7a8696 15%);
-  height:620px;
+  height:100%;
   padding-top:30px;
 }
 
@@ -198,7 +229,7 @@ body {
   background:repeat-x center,
   linear-gradient(to top, transparent 90%, #28384f 90%),
   linear-gradient(to bottom,transparent 10%, #7a8696 10%);
-  height:940px;
+  height:100%;
   padding-top:30px;
 }
 
@@ -229,7 +260,7 @@ body {
   background:repeat-x center,
   linear-gradient(to top, transparent 85%, #28384f 85%),
   linear-gradient(to bottom,transparent 15%, #7a8696 15%);
-  height:480px;
+  height:100%;
   padding-top: 30px;
 }
 
@@ -351,4 +382,33 @@ body {
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+@media only screen and (max-width: 1000px){
+
+.p_pic{
+  max-width: 30%;
+}
+
+.intro-box{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 0%;
+}
+
+.scene{
+  padding-bottom: 10%;
+}
+
+.bodypad{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 15%;
+}
+
+.icon{
+  max-width: 30%;
+  text-align: center;
+
+}
 }
