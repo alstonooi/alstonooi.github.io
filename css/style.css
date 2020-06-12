@@ -1,4 +1,4 @@
-html {
+ html {
   scroll-behavior: smooth;
    overflow-y: scroll;
 }
@@ -10,7 +10,7 @@ body {
 }
 
 .img-responsive { 
-  width:100%;
+  max-width:100%;
 }
 
 .section{
@@ -49,11 +49,12 @@ body {
   padding-top: 20px;
   padding-left: 25px;
   padding-right: 25px;
+  line-height: 170%;
 }
 
 .intro-box{
   padding-left: 10%;
-  padding-top: 25%;
+  padding-top: 23%;
   padding-bottom: 10%;
 }
 
@@ -65,79 +66,8 @@ body {
   color:#1313FE ;
 }
 
-/*.scene {
-  perspective: 1000px;
-  padding-left: 20%;
-}
-
-.card {
-  transition: transform 1s;
-  transform-style: preserve-3d;
-  cursor: pointer;
-  position: relative;
-  width: 80%;
-  height: auto;
-}*/
-
-/*.card.is-flipped {
-  transform: rotateY(180deg);
-}
-
-.card__face {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  backface-visibility: hidden;
-}
-
-.card__face--back {
-  
-  transform: rotateY(180deg);
-}
-
-.cardpic{
-  max-width:100%;
-}
-*/
-
-
-/*.scene {
-  perspective: 600px;
-  padding-left: 20%;
-}
-
-.card {
-  width: 80%;
-  height: auto;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-  cursor: pointer;
-  position: relative;
-}
-
-.card.is-flipped {
-  transform: rotateY(180deg);
-}
-
-.card__face {
-  width: 100%;
-  height: 100%;
-  color: white;
-  text-align: center;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.card__face--back {
-  position: absolute;
-  transform: rotateY(180deg);
-}*/
-
 .scene {
   perspective: 1000px;
-  padding-left: 20%;
 }
 
 .card {
@@ -145,7 +75,7 @@ body {
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
-  width: 80%;
+  width: 65%;
   height: auto;
 }
 
@@ -241,22 +171,6 @@ body {
   text-align: center;
 }
 
-.headpic{
-  z-index: 2;
-  position: absolute;
-  padding-top:1%;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.headpicc{
-  z-index: 2;
-  position: absolute;
-  padding-top:2%;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .bodypad{
   padding-top: 5%;
   padding-bottom: 5%;
@@ -348,18 +262,18 @@ body {
 
 .slick-slider
 {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-            user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .slick-list
@@ -453,11 +367,30 @@ body {
     display: none;
 }
 
-@media only screen and (max-width: 1000px) and (min-width: 600px){
-.p_pic{
-  max-width: 30%;
+@media only screen and (max-width: 1000px) and (min-width: 650px){
+.intro-box{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 0%;
+}
+.scene{
+  padding-bottom: 10%;
 }
 
+.card{
+  max-width: 50%;
+}
+
+.bodypad{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 15%;
+}
+
+
+}
+
+@media only screen and (max-width: 650px) and (min-width: 0px){
 .intro-box{
   padding-left: 5%;
   padding-right: 5%;
@@ -468,41 +401,13 @@ body {
   padding-bottom: 10%;
 }
 
-.bodypad{
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 15%;
+.card{
+  max-width: 60%;
 }
 
-.icon{
-  max-width: 20%;
-  text-align: center;
-}
-
-.headpic{
-  padding-top: 10%;
-}
-
-.headpicc{
-  padding-top:10%;
-}
-
-}
-
-@media only screen and (max-width: 600px) and (min-width: 0px){
-.p_pic{
-  max-width: 30%;
-}
-
-.intro-box{
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 0%;
-}
-
-.scene{
-  padding-bottom: 10%;
-}
+ .icon{
+  padding-top: 20%;
+ }
 
 .bodypad{
   padding-left: 5%;
@@ -510,18 +415,5 @@ body {
   padding-top: 15%;
 }
 
-.icon{
-  max-width: 20%;
-  text-align: center;
 }
 
-.headpic{
-  padding-top: 10%;
-}
-
-.headpicc{
-  padding-top:15%;
-}
-
-
-}
