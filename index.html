@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/contact-buttons.css">
-
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="js/jquery.contact-buttons.js"></script>
@@ -97,66 +97,27 @@
       </ul>
     </div>
 </nav>
-
+<div class="section">
+  <img src="cover.jpg" alt="cover_pic" class="img-responsive">
+</div>
 <div class="section" id="About">
-  <div class="container-fluid no-padding content">
-    
-    <div class="row bodyy">
-      <div class="row header justify-content-md-center mx-auto">
-        <div class="col-4 col-sm-4 col-md-3 col-lg-2 justify-content-md-center mx-auto">
-          <img src="MIMSA_board17-2.jpg" alt="Profile_pic" class=" img-responsive img-thumbnail rounded-circle">
-          <br>
-          <h2>Alston Ooi</h2>
+  <div class="container-fluid no-padding">
+    <div class="row bodyy bodypad">
+      <div class="col-lg-7 text-justify mx-auto">
+        <h2 class="title">About Me.</h2> <br>
+          <p class="content_intro">Hello everyone, I am Ooi Jin Fu, but you can call me <strong>Alston</strong>. I am a recent graduate from University of Michigan, Ann Arbor, United States (<strong><span class="mich">"Go Blue!"</span></strong>). As a Bachelor of Science degree holder with <span class="popup" onclick="majors()"><u>three majors</u> <span class="popuptext" id="myPopup">Actuarial Science <br> Data Science <br> Statistics</span> </span>, I am currently seeking job opportunities that are related to data analytics/risk assessment. As a data-driven person, I believe data always reveal the untold story and I am excited to tell that story to you! I am also constantly looking for interesting and cool data science/web app side projects, so hit me up if you need someone to work with!</p>
         </div>
-      </div>
-      <div class="row justify-content-md-center mx-auto">
-        <div class="col-lg-4 pull-left card-box">
-          <div class="container">
-            <div class="scene scene--card justify-content-md-center mx-auto">
-              <div class="card justify-content-md-center mx-auto">
-                <div class="card__face card__face--front">
-                  <img class="cardpic img-fluid" src="card_front.png">
-                </div>
-                <div class="card__face card__face--back">
-                  <img class="cardpic img-fluid" src="card_back.png">
-                </div>
-              </div>
-              <br>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="row intro-box">
-            <div class="col text-justify content_text_intro">
-              <p>Hello everyone, I am Ooi Jin Fu, but you can call me <strong>Alston</strong>. I am a recent graduate from University of Michigan, Ann Arbor, United States (<strong><span class="mich">"Go Blue!"</span></strong>). As a Bachelor of Science degree holder with <span class="popup" onclick="majors()"><u>three majors</u> <span class="popuptext" id="myPopup">Actuarial Science <br> Data Science <br> Statistics</span> </span>, I am currently seeking job opportunities that are related to data analytics/risk assessment. As a data-driven person, I believe data always reveal the untold story and I am excited to tell that story to you! I am also constantly looking for interesting and cool data science/web app side projects, so hit me up if you need someone to work with!</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>  
 </div>
 
-<script>
-  var card = document.querySelector('.card');
-      if(card){
-        card.addEventListener( 'click', function() {
-          card.classList.toggle('is-flipped');
-        });
-      }
-</script>
-
 <div class="section" id="Work_Experience">
-  <div class="container-fluid no-padding content">
-    <div class="row bodyy bodypad">
-      <div class="row headerr justify-content-md-center mx-auto">
-      <div class="col-4 col-sm-3 col-md-2 col-lg-2 justify-content-md-center mx-auto">
-        <img src="work.png" alt="icon_pic" class="img-responsive img-thumbnail rounded-circle">
-      </div>
-      </div>
-      <div class="col-lg-10 mx-auto content_text_work">
+  <div class="container-fluid no-padding">
+    <div class="row bodyy_2 bodypad">
+      <div class="col-lg-7 mx-auto content_text_work">
+        <h2 class="title">My Work Experience.</h2>
         <br>
-        <ul>
+        <ul class="content">
           <li> <strong>Student Instructional Technology Consultant (Liaison)</strong></li>
           <span class="duration">May 2017 – May 2020 &#8231; 3 years 1 month</span>
             <dd>- Assist professors with Math courses online webwork and 3D printing using <strong> Matlab </strong> and <strong> ReplicatorG.</strong></dd>
@@ -174,19 +135,22 @@
     </div>
   </div>  
 </div>
+<script>
+  var card = document.querySelector('.card');
+      if(card){
+        card.addEventListener( 'click', function() {
+          card.classList.toggle('is-flipped');
+        });
+      }
+</script>
 
 <div class="section" id="Computer_Skills">
-  <div class="container-fluid no-padding content">
+  <div class="container-fluid no-padding">
     <div class="row bodyy bodypad">
-      <div class="row headerr justify-content-md-center mx-auto">
-      <div class="col-4 col-sm-3 col-md-2 col-lg-2 justify-content-md-center mx-auto">
-        <img src="skill.png" alt="icon_pic" class="img-responsive img-thumbnail rounded-circle">
-      </div>
-      </div>
-      <div class="col-lg-10 mx-auto content_text_skills">
+      <div class="col-lg-8 mx-auto content_text_skills">
+        <h2 class="title">My Computer Skills.</h2><br>
         <div class="container">
           <br>
-          <p class="text-center languages"><strong>Programming Languages</strong></p>
             <section class="customer-logos slider">
               <div class="slide"><img src="/logos/cplusplus.jpg"></div>
               <div class="slide"><img src="/logos/html.jpg"></div>
@@ -198,8 +162,7 @@
               <div class="slide"><img src="/logos/python.png"></div>
               <div class="slide"><img src="/logos/latex.png"></div>
             </section>
-            <br>
-            <p class="text-center languages"><strong>Computer Softwares</strong></p>
+            <br> <br> <br>
             <section class="customer-logos slider">
               <div class="slide"><img src="/logos/rstudio.png"></div>
               <div class="slide"><img src="/logos/stata.jpg"></div>
@@ -219,16 +182,11 @@
 </div>
 
 <div class="section" id="Awards_Certificates">
-  <div class="container-fluid no-padding content">
-    <div class="row bodyy bodypad">
-      <div class="row headerr justify-content-md-center mx-auto">
-      <div class="col-4 col-sm-3 col-md-2 col-lg-2 justify-content-md-center mx-auto">
-        <img src="award.png" alt="icon_pic" class="img-responsive img-thumbnail rounded-circle">
-      </div>
-      </div>
-      <div class="col-lg-10 mx-auto content_text_work">
-        <br>
-        <ul>
+  <div class="container-fluid no-padding">
+    <div class="row bodyy_2 bodypad">
+      <div class="col-lg-7 mx-auto content_text_work">
+        <h2 class="title">My Award & Certificates.</h2><br>
+        <ul class="content">
           <li> <strong>Petroliam Nasional Berhad (Petronas) Scholarship Awards</strong></li>
           <span class="duration">Awarded: Jun 2015</span>
             <dd>- Full tuition scholarship awarded to pursue undergraduate studies at selected top universities</dd>
@@ -247,21 +205,15 @@
 </div>
 
 <div class="section" id="Exams">
-  <div class="container-fluid no-padding content">
+  <div class="container-fluid no-padding">
     <div class="row bodyy bodypad">
-      <div class="row headerr justify-content-md-center mx-auto">
-      <div class="col-4 col-sm-3 col-md-2 col-lg-2 justify-content-md-center mx-auto">
-        <img src="exam.png" alt="icon_pic" class="img-responsive img-thumbnail rounded-circle">
-      </div>
-      </div>
-      <div class="col-lg-10 mx-auto content_text_soa">
-        <br>
-        <p class="text-center languages"><strong>SOA Actuarial Exam</strong>
-        <ul>
-          <li>Financial Mathematics</li>
-          <li>Probability </li>
-          <li>Statistics for Risk Modeling</li>
-          <li>Short-term Actuarial Mathematics</li>
+      <div class="col-lg-7 mx-auto content_text_soa">
+        <h2 class="title">My Actuarial Exams.</h2><br>
+        <ul class="content">
+          <li>Financial Mathematics (Passed in Aug 2017)</li>
+          <li>Probability (Passed in May 2018)</li>
+          <li>Statistics for Risk Modeling (Waived)</li>
+          <li>Short-term Actuarial Mathematics (Passed in Oct 2019)</li>
           <li>VEE: Validation by Educational Experience</li>
             <dd>- Economics</dd>
             <dd>- Corporate Finance</dd>
@@ -273,16 +225,11 @@
 </div>
 
 <div class="section" id="Projects">
-  <div class="container-fluid no-padding content">
-    <div class="row bodyy bodypad">
-      <div class="row headerr justify-content-md-center mx-auto">
-      <div class="col-4 col-sm-3 col-md-2 col-lg-2 justify-content-md-center mx-auto">
-        <img src="project.png" alt="icon_pic" class="img-responsive img-thumbnail rounded-circle">
-      </div>
-      </div>
-      <div class="col-10 mx-auto content_text">
-        <br>
-        <ul>
+  <div class="container-fluid no-padding">
+    <div class="row bodyy_2 bodypad">
+      <div class="col-lg-7 mx-auto content_text_project">
+        <h2 class="title">My Projects.</h2><br>
+        <ul class="content">
           <li> <strong>Piazza Post Classification</strong></li>
             <dd>- Built Naive Bayes Classifier in C++ to classify 2988 posts accurately to respective labels.</dd>
             <dd>- Implemented Map using Binary Search Tree to enhance computational time complexity.</dd>
@@ -293,20 +240,16 @@
             <dd>- Analyzed data of 2000 entries using R to investigate the research questions.</dd>
         </ul>
       </div>
-  </div>  
+    </div>  
+  </div>
 </div>
 
 <div class="section" id="activities">
-  <div class="container-fluid no-padding content">
+  <div class="container-fluid no-padding">
     <div class="row bodyy bodypad">
-      <div class="row headerr justify-content-md-center mx-auto">
-      <div class="col-4 col-sm-3 col-md-2 col-lg-2 justify-content-md-center mx-auto">
-        <img src="activitie.png" alt="icon_pic" class="img-responsive img-thumbnail rounded-circle">
-      </div>
-      </div>
-      <div class="col-lg-10 mx-auto content_text_work">
-        <br>
-        <ul>
+      <div class="col-lg-7 mx-auto content_text">
+        <h2 class="title">My Activities.</h2><br>
+        <ul class="content">
           <li> <strong>Michigan Malaysian Student Association (MiMSA) Webmaster </strong></li>
           <span class="duration"> Sep 2016 - May 2017 &#8231; 9 months</span>
             <dd>- Constantly update the website with recent events and announcements.</dd>
@@ -317,8 +260,10 @@
             <dd>- Built and maintained an Excel program to keep track of students’ academic performances.</dd>
         </ul>
       </div>
-    </div>
-  </div>  
+    </div>  
+  </div>
 </div>
+
 </body>
 </html>
+
