@@ -23,6 +23,7 @@ body {
 .navbar {
   background:#6ab446;
 }
+
 .nav-link,
 .navbar-brand {
   color: #fff;
@@ -45,7 +46,7 @@ body {
   border: 2px solid #FFFFFF;
   border-radius: 15px;
   -moz-border-radius: 15px;
-  text-align: center;
+  text-align: left;
   padding-top: 20px;
   padding-left: 25px;
   padding-right: 25px;
@@ -53,13 +54,7 @@ body {
 }
 
 .intro-box{
-  padding-left: 10%;
-  padding-top: 23%;
-  padding-bottom: 10%;
-}
-
-.card-box{
-  padding-top:7%;
+  padding-bottom: 5%;
 }
 
 .mich{
@@ -68,6 +63,8 @@ body {
 
 .scene {
   perspective: 1000px;
+  max-width: 65%;
+  max-height: auto;
 }
 
 .card {
@@ -75,7 +72,6 @@ body {
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
-  width: 65%;
   height: auto;
 }
 
@@ -99,6 +95,7 @@ body {
 .cardpic{
   max-width:100%;
 }
+
 .popup {
   position: relative;
   display: inline-block;
@@ -159,10 +156,16 @@ body {
 }
 
 .header{
-  position: relative;
-  background-color: #28384f;
-  height: 15vh;
+  padding-top: 2%;
+  background-color: #7a8696;
+  padding-bottom: 2%;
 }
+
+.headerr{
+  background-color: #7a8696;
+  padding-bottom: 2%;
+}
+
 .bodyy{
   background-color:  #7a8696;
 }
@@ -174,6 +177,10 @@ body {
 .bodypad{
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+.icon{
+  padding-bottom: 2%;
 }
 /*--- work ---*/
 
@@ -188,15 +195,6 @@ body {
 }
 
 /*--- skills ---*/
-.content_skills {
-  text-align:center;
-  background:repeat-x center,
-  linear-gradient(to top, transparent 85%, #28384f 85%),
-  linear-gradient(to bottom,transparent 15%, #7a8696 15%);
-  height:100%;
-  padding-top:30px;
-}
-
 .content_text_skills{
   background: #d8d8d8;
   position: relative;
@@ -207,15 +205,6 @@ body {
 }
 
 /*--- awards ---*/
-.content_awards {
-  text-align:center;
-  background:repeat-x center,
-  linear-gradient(to top, transparent 90%, #28384f 90%),
-  linear-gradient(to bottom,transparent 10%, #7a8696 10%);
-  height:100%;
-  padding-top:30px;
-}
-
 .content_text_soa{
   background: #d8d8d8;
   position: relative;
@@ -238,14 +227,6 @@ body {
   text-align: left;
 }
 
-.content_projects{
-  text-align:center;
-  background:repeat-x center,
-  linear-gradient(to top, transparent 85%, #28384f 85%),
-  linear-gradient(to bottom,transparent 15%, #7a8696 15%);
-  height:100%;
-  padding-top: 30px;
-}
 
  /*--- slider ---*/
 
@@ -371,14 +352,12 @@ body {
 .intro-box{
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 0%;
+  padding-bottom: 5%;
 }
 .scene{
   padding-bottom: 10%;
-}
-
-.card{
-  max-width: 50%;
+  max-width: 60%;
+  max-height: auto;
 }
 
 .bodypad{
@@ -387,27 +366,20 @@ body {
   padding-top: 15%;
 }
 
-
 }
 
 @media only screen and (max-width: 650px) and (min-width: 0px){
 .intro-box{
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 0%;
+  padding-bottom: 5%;
 }
 
 .scene{
   padding-bottom: 10%;
-}
-
-.card{
   max-width: 60%;
+  max-height: auto;
 }
-
- .icon{
-  padding-top: 20%;
- }
 
 .bodypad{
   padding-left: 5%;
