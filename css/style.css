@@ -15,16 +15,16 @@ body {
 
 .section{
   height: 100%;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 
 /*--- navigation bar ---*/
 .navbar {
   background:#6ab446;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .nav-link,
@@ -47,6 +47,9 @@ body {
   color:#1313FE ;
 }
 
+.content_text_about{
+  padding-top: 6%;
+}
 .popup {
   position: relative;
   display: inline-block;
@@ -107,7 +110,7 @@ body {
 }
 .duration{
   color:#787777;
-  font-size: 20px;
+  font-size: 16px;
 }
 .content{
   font-family: 'Noto Sans JP', sans-serif;
@@ -139,8 +142,8 @@ body {
 }
 /*--- work ---*/
 
-
 .content_text_work{
+  padding-top: 6%;
   background: #d8d8d8;
   position: relative;
   text-align: left;
@@ -148,6 +151,7 @@ body {
 
 /*--- skills ---*/
 .content_text_skills{
+  padding-top: 6%;
   background: #F7F7F6;
   position: relative;
   text-align: left;
@@ -155,6 +159,7 @@ body {
 
 /*--- awards ---*/
 .content_text_soa{
+  padding-top: 6%;
   background: #F7F7F6;
   position: relative;
   text-align: left;
@@ -162,6 +167,7 @@ body {
 
 /*--- project ---*/
 .content_text_project{
+  padding-top: 6%;
   background: #d8d8d8;
   position: relative;
   text-align: left;
@@ -169,13 +175,12 @@ body {
 
 /*--- activities ---*/
 .content_text{
+  padding-top: 6%;
   background: #F7F7F6;
   position: relative;
   text-align: left;
 }
  /*--- slider ---*/
-
-
 .slick-slide {
     margin: 0px 20px;
 }
