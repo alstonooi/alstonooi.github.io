@@ -19,7 +19,6 @@ body {
   margin-right: 15%;
 }
 
-
 /*--- navigation bar ---*/
 .navbar {
   background:#6ab446;
@@ -42,6 +41,21 @@ body {
   justify-content: flex-end;
 }
 
+.section_cover{
+  margin-left: 15%;
+  margin-right: 15%;
+  position: relative;
+}
+#word{
+  position: absolute;
+  top: 70%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-size: 50px;
+  color:white;
+  font-family: 'Knewave', cursive;
+
+}
 /*--- about ---*/
 .mich{
   color:#1313FE ;
@@ -134,7 +148,7 @@ body {
 
 .bodypad{
   padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 8%;
 }
 
 .icon{

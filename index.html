@@ -8,11 +8,13 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/contact-buttons.css">
-  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+JP&family=Knewave&display=swap" rel="stylesheet">
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="js/jquery.contact-buttons.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
 </head>
 
 <body>
@@ -97,9 +99,27 @@
       </ul>
     </div>
 </nav>
-<div class="section">
+
+<div class="section_cover">
   <img src="cover.jpg" alt="cover_pic" class="img-responsive">
+  <div id="word"></div>
 </div>
+
+<script>
+  var app = document.getElementById('word');
+
+  var typewriter = new Typewriter(app, {
+    loop: true
+  });
+
+  typewriter.typeString('Hi')
+      .pauseFor(1000)
+      .typeString(', I am Alston.')
+      .pauseFor(5000)
+      .deleteAll(100)
+      .start();
+
+</script>
 <div class="section" id="About">
   <div class="container-fluid no-padding">
     <div class="row bodyy bodypad">
